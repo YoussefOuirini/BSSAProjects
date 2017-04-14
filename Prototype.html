@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prototype</title>
+    <script>
+
+    function writer (title,pages) {
+        this.title = title;
+        this.pages = pages;
+    }
+
+    var book1 = new writer ("Epic story", ["Once upon a time", "There was a giant.", "Who fought for his king and country against the evil invaders."]);
+
+    console.log(book1.title)
+    console.log(book1.pages[0])
+
+    var book2 = new writer ("Mozes", ["One upon a time in Egypt", "Cookies fell from the sky", "and everybody ate some."])
+
+    console.log(book2.title)
+    console.log(book2.pages[2])
+
+    writer.prototype.publisher = "Publisher"
+
+    console.log (book1)
+
+    </script>
+</head>
+<body>
+<h1> What is going on in here?</h1>
+</body>
+</html>

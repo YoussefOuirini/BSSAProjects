@@ -1,0 +1,77 @@
+<Index html>
+<html>
+<head>
+    <title>Assignment 2</title>
+    <script>
+
+//1. given this array print out all names. The output should be:
+/*
+Mittens
+Doge
+Mickey
+Chip
+Dale
+*/
+//write code here
+
+var myPets = ['Mittens', 'Doge', 'Mickey', 'Chip', 'Dale'];
+
+console.log(myPets[0]);
+console.log(myPets[1]);
+console.log(myPets[2]);
+console.log(myPets[3]);
+console.log(myPets[4]);
+
+
+//2. print out only the odd names. The output should be: 
+/*
+Mittens
+Mickey
+Dale
+*/
+//Hint: use an if-statement to check if you have an odd number, and use the modulo operator like in FizzBuzz
+//write code here
+
+for (var i = 0; i < 5; i++) {
+	if (i % 2 === 0){
+		console.log(myPets[i]);
+	}
+}
+
+
+//3. Bonus 1: print out all the musical instruments of myCollections.
+//write code here
+
+var myCollections = [['ball', 'tennis racket', 'boxing glove'], ['pants', 't-shirt', 'shoes'], ['guitar', 'piano', 'mandolin']];
+
+for (var i = 2; i < myCollections.length; i++) {
+	for (var j=0; j < myCollections[i].length; j++) {
+		console.log(myCollections[i][j]);
+	}
+}
+
+//4. Bonus 2: Awesome! Now, print out all the odd elements. The output should be:
+/*
+ball
+boxing glove
+pants
+shoes
+guitar
+mandolin
+*/
+//write code here
+
+for (var i = 0; i < myCollections.length; i++) {
+	for (var j=0; j < myCollections[i].length; j++) {
+		if ( j % 2 === 0){
+			console.log(myCollections[i][j]);
+		}
+	}
+}
+
+    
+    </script>
+</head>
+<body>
+</body>
+</html>

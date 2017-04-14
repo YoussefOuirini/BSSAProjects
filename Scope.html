@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scope</title>
+    <script>
+
+    /* var rain = "wet";
+
+    function weather ( ) {
+        var norain = "sunny";
+        return rain + norain;
+    }
+
+    console.log (weather ());
+    */
+
+    var globalVariable = "Hi there, I'm global"
+
+    function globalLocalGreet () {
+        var localVariable = "Hi, I'm local";
+        console.log (localVariable + "\n" + globalVariable);
+    }
+
+    globalLocalGreet ();
+
+    
+    function globalLocalGreet2 () {
+        var localVariable = "Hi, I'm local";
+        return globalVariable + "\n" + localVariable;
+ 
+    }
+
+    console.log (globalLocalGreet2());
+
+    var differentGreetings = globalLocalGreet2();
+
+    console.log(differentGreetings);
+
+    var differentGreetings = differentGreetings + " " + "Another Greeting";
+
+    console.log (differentGreetings);
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>

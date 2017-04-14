@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anonymous Functions/title>
+    <script>
+
+    function performOperation(x, y, operation) {
+        console.log("performing operation with inputs: " + x + " " + y);     
+        var z = operation(x, y);     
+        console.log("result: " + z); 
+    }
+
+    var multiply = function(a, b) {     
+        return a * b; 
+    }
+
+    var getGreaterNumber = function(a, b) {     
+        if(a > b) {         
+            return a;
+        } else {         
+            return b;     
+        } 
+    }
+
+    performOperation(2, 3, multiply); 
+    performOperation(10, 10, multiply); 
+    performOperation(5, 6, getGreaterNumber); 
+    performOperation(5, -6, getGreaterNumber);
+
+
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>

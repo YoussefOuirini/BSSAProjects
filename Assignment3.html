@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book</title>
+    <script>
+    /* 
+    Book library
+
+    Create an object that represents a book:
+
+    Part 1 Give it a title property with a value that is the title of your book. Give it a body� property which has an array of strings as the value. There should be at least three strings within the array. This array represents the pages of text within your book.
+
+    Part 2 Create another object with the same format, but different title and different body.
+
+    Part 3 Now, create a function that reads the book by first printing out the title, then printing out each element (page) in the body. For a book with title "Infinite Jest" and pages "Written by David Foster Wallace", "Hal Incandenza is the youngest of the Incandenza children.", and "As a child, he was very precocious.", the output should read as follows:
+
+    Title: Infinite Jest
+    Page 1: Written by David Foster Wallace
+    Page 2: Hal Incandenza is the youngest of the Incandenza children.
+    Page 3: As a child, he was very precocious.
+    */
+
+    /*
+
+	var BookOfYoussef = {
+        title: "Homely surprise",
+        text: ["When Youssef went home, he did not yet know that he liked cookies in the morning and in the evening.", "When he opened the door of his home a pleasant smell met him, a suprise that would only rear it's head after a while.", "In that home, he stored something nice, and now that surprise, was going to ruin that all. He had put away some nice cookie dough for the next morning, but now somebody has taken that dough and had been baking it. A strange situation indeed."],
+    }
+
+        var TheHobbit= {
+        title: "An Unexpected Party",
+        text: ["In a hole in the ground there lived a hobbit. Not a nasty, dirty, wethole, filled with the ends of worms and an oozy smell, nor yet a dry, bare,sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort.", 
+        	"It had a perfectly round door like a porthole, painted green, with a shiny yellow brass knob in the exact middle. The door opened on to a tube-shaped hall like a tunnel: a very comfortable tunnel without smoke, chairs, and lots and lots of pegs for hats and coats - the hobbit was fond of visitors. The tunnel wound on and on, going fairly but not quite straight into the side of the hill - The Hill, as all the people for many miles round called it - and many little round doors opened out of it, first on one side and then on another. No going upstairs for the hobbit: bedrooms, bathrooms, cellars, pantries (lots of these), wardrobes (he had whole rooms devoted to clothes), kitchens, dining-rooms, all were on the same floor, and indeed on the same passage. The best rooms were all on the left-hand side (going in), for these were the only ones to have windows, deep-set round windows looking over his garden and meadows beyond, sloping down to the river.", 
+        	"This hobbit was a very well-to-do hobbit, and his name was Baggins. The Bagginses had lived in the neighbourhood of The Hill for time out of mind, and people considered them very respectable, not only because most of them were rich, but also because they never had any adventures or did anything unexpected: you could tell what a Baggins would say on any question without the bother of asking him. This is a story of how a Baggins had an adventure, found himself doing and saying things altogether unexpected. He may have lost the neighbours respect, but he gained-well, you will see whether he gained anything in the end."],
+    }
+
+    function ReadTheBook (NameBook) {
+    	console.log ("title: " + NameBook.title);
+        for (var i = 0; i <= (NameBook.text.length) ; i++) {
+            if (i > 0) {console.log ("page " + [i] + ": " + NameBook.text[i-1])
+            }    
+        }
+    }
+
+    ReadTheBook (BookOfYoussef);
+    ReadTheBook (TheHobbit);
+
+	/* EXERCISE
+	> Write a function that takes in two arrays of the same length
+	> Have the function return an object whose keys are the first array and whose values are the second array.
+	*/
+
+
+
+	function Arrays () {
+		var muffin = ["dough", "choclate"];
+		var cake = ["dough", "love"];
+		var lunch = { 
+			muffin : cake,
+		};
+		return lunch;
+	}
+
+	console.log (Arrays());
+
+    
+
+    </script>
+</head>
+<body>
+</body>
+</html>
